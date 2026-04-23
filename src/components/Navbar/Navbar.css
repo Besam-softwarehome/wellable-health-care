@@ -1,0 +1,102 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7px 0;
+    background-color: white;
+    position: fixed;
+    color: black;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
+}
+nav .logo{
+    margin-right: auto;
+}
+.icon-container{
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 5px;
+}
+nav .logo .mylogo{
+    width: 8rem;
+    margin-left: 0;
+}
+nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav .menu ul li{
+    list-style: none;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+nav .menu ul li a:hover,
+nav .menu ul li a.active {
+  border-bottom: 2px solid green;
+  color: green;
+}
+.menu-icon{
+    display: none;
+}
+
+/* -------- Media Query -------- */
+
+@media (max-width: 840px){
+    .nav{
+        overflow-x:hidden;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        z-index: 1001;
+    }
+    nav .logo{
+        margin-left: 0;
+    }
+    nav .logo .mylogo{
+        width: 6rem;
+    }
+    nav .menu ul{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        
+        text-align: center;
+        padding: 2rem 0;
+        transition: 0.4s ease;
+        z-index: -1;
+        gap: 2rem;
+    }
+    nav .menu ul.show-menu{
+        top: 60px;
+    }
+    nav .menu ul li{
+        color: black;
+    }
+
+    nav .menu ul li a{
+        color: black;
+        font-size: 1.3rem;
+    }
+}

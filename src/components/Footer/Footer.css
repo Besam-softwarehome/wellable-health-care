@@ -1,0 +1,168 @@
+.footer {
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: rgba(27,53,68,1);
+    color: white;
+}
+
+/* LINKS SECTION */
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 2rem 3rem;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* FOOTER HEADINGS */
+.footer h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* SOCIAL TEXT */
+.footer .links .socials p {
+    margin-bottom: 0.5rem;
+    max-width: 280px;
+    line-height: 1.5;
+}
+
+/* LISTS */
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.links ul li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.links .hours ul li{
+    display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+
+.links ul li:hover {
+    color: #9fd3c7;
+}
+
+/* SOCIAL ICONS */
+.footer .socials .whatsapp:hover {
+    color: green;
+    background-color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.footer .socials .facebook:hover {
+    color: blue;
+    background-color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+/* REMOVE INLINE LIST STYLE */
+.footer ul li {
+    list-style: none;
+}
+
+/* COPYRIGHT SECTION */
+.footer .rights-section {
+    border-top: 1px solid #797979;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1rem 0;
+}
+
+.footer .rights-section p {
+    margin: 1rem 0 0;
+    font-size: 14px;
+}
+@media (max-width: 1024px) {
+    /* 📲 iPad / tablets */
+    .footer .links {
+        gap: 2rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer h2 {
+        font-size: 1.1rem;
+    }
+
+    .links ul li {
+        font-size: 15px;
+    }
+
+    .footer .links .socials p {
+        max-width: 220px;
+        font-size: 14px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE ONLY */
+/* ========================= */
+@media (max-width: 768px) {
+    .footer .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* flex-direction: column;
+        align-items: flex-start;   */
+        text-align: left;          /* LEFT TEXT */
+        gap: 1.8rem;
+        padding: 1.5rem;
+    }
+
+    .footer h2 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .footer .links .socials p {
+        max-width: 100%;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .links ul {
+        align-items: flex-start;
+    }
+
+    .links ul li {
+        font-size: 15px;
+    }
+}
+
+/* ========================= */
+/* 📱 SMALL MOBILE */
+/* ========================= */
+@media (max-width: 480px) {
+    .footer .links {
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+
+    .footer h2 {
+        font-size: 1rem;
+    }
+
+    .links ul li {
+        font-size: 14px;
+    }
+
+    .footer .rights-section p {
+        font-size: 12px;
+    }
+}

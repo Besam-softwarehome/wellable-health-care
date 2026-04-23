@@ -1,0 +1,14 @@
+.counter .name{
+   /* color: rgb(31, 72, 48); */
+   color: white;
+   font-weight: 700;
+   font-size: 20px;
+}
+.counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering */
+    height: 100%;
+    text-align: center;
+}

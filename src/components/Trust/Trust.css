@@ -1,0 +1,136 @@
+.call{
+    width: 100%;
+    margin: 4rem auto 0;
+    padding: 3rem 1.5rem;
+    border-radius: 30px;
+    background-image: linear-gradient(
+        90.8deg,
+        rgba(27,53,68,1) 2.2%,
+        rgba(110,180,135,1) 84%
+    );
+}
+
+.call-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.call-icon{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.call-content h2{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.call-content p{
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.92);
+}
+
+.call-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* second button style */
+.btn-outline{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover{
+    background: white;
+    color: rgba(27,53,68,1);
+}
+
+/* ========================= */
+/* 📱 TABLETS */
+/* ========================= */
+@media (max-width: 1024px){
+    .call{
+        padding: 2.5rem 1.2rem;
+        margin-top: 3rem;
+    }
+
+    .call-icon{
+        font-size: 2.5rem;
+    }
+
+    .call-content h2{
+        font-size: 2rem;
+    }
+
+    .call-content p{
+        font-size: 0.95rem;
+        max-width: 520px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 640px){
+    .call{
+        padding: 2rem 1rem;
+        border-radius: 22px;
+        margin-top: 2.5rem;
+    }
+
+    .call-icon{
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .call-content h2{
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .call-content p{
+        font-size: 0.95rem;
+        max-width: 90%;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .call-buttons{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .call-buttons .btn{
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+    }
+}
+
+/* ========================= */
+/* 📱 SMALL MOBILE */
+/* ========================= */
+@media (max-width: 480px){
+    .call-content h2{
+        font-size: 1.4rem;
+    }
+
+    .call-content p{
+        font-size: 0.9rem;
+    }
+
+    .call-icon{
+        font-size: 2rem;
+    }
+}

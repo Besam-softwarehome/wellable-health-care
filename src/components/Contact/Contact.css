@@ -1,0 +1,48 @@
+.contact-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width:100%;
+    margin: 0 auto;
+    padding:0 1rem;
+    min-height: 100vh;
+}
+
+.contact-section .left,
+.contact-section .right{
+    width: 100%;
+}
+
+/* iPad */
+@media (max-width: 1024px){
+    .contact-section{
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+        grid-template-columns: 1fr;
+    }
+    .contact-section .left{
+        order: 2;
+    }
+    .contact-section .right{
+        order: 1;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .contact-section{
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0.5rem 1rem;
+    }
+    .contact-section .right{
+        order: 1;
+    }
+
+    .contact-section .left{
+        order: 2;
+    }
+}

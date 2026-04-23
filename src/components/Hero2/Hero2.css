@@ -1,0 +1,141 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: left;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  /* background-color:transparent; */
+  gap: 2rem;
+  /* border-bottom: 1px solid green; */
+  position: relative;   /* VERY IMPORTANT */
+  overflow: hidden; 
+  padding-bottom: 0;
+}
+.bg-video {
+  position: absolute; /* change from absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.left, .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left h1{
+  /* color: green; */
+  color: rgb(31, 72, 48);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align: left;
+}
+.left p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: left;
+    font-weight: 300;
+}
+.container-left {
+  text-align: center;
+}
+.container-left .hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.image:hover{
+  transform: translateY(-8px);
+  
+}
+.hero .right{
+  border-radius: 12px;
+}
+/* .container-left ul{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem; 
+  list-style:none; 
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+} */
+
+/* ------- Media Query -------- */
+
+@media (max-width: 1024px){
+
+  .hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    height: 100vh;
+    gap: 0;
+    /* overflow-x: hidden; */
+  }
+
+  .left h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .left p{
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .container-left .hero-btn{
+    margin-bottom: 0.5rem;
+  }
+
+  .left, .right{
+    margin: 0;
+    padding: 0;
+  }
+
+  .image{
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 640px){
+    .left h1{
+      font-size: 2rem;
+  }
+  .left p{
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .container-left .hero-btn{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+  .right{
+    margin-top: 0rem;
+  }
+  .right .image{
+    display:block;
+    margin-bottom: 8rem;
+  }
+}
