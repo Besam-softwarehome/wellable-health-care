@@ -4,10 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wellable-health-care</title>
+    <style>
+      /* Full screen loader container */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff; /* or your theme color */
+}
+
+/* Loader image */
+#root img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* iPad */
+@media (max-width: 1024px) {
+  #root img {
+    width: 120px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #root img {
+    width: 90px;
+  }
+}
+
+/* Optional smooth fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+    </style>
     <script type="module" crossorigin src="/wellable-health-care/assets/index-D-JljNFd.js"></script>
     <link rel="stylesheet" crossorigin href="/wellable-health-care/assets/index-DHowr1Na.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <img src="/wellable-health-care/assets/logo-2-m4eD457w.jpeg" alt="page loader">
+    </div>
   </body>
 </html>
